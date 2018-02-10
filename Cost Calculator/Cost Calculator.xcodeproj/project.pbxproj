@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		692164A3202EE1720001E8A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692164A2202EE1720001E8A2 /* AppDelegate.swift */; };
-		692164A5202EE1720001E8A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692164A4202EE1720001E8A2 /* ViewController.swift */; };
+		692164A5202EE1720001E8A2 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692164A4202EE1720001E8A2 /* MainVC.swift */; };
 		692164A8202EE1720001E8A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692164A6202EE1720001E8A2 /* Main.storyboard */; };
 		692164AA202EE1720001E8A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 692164A9202EE1720001E8A2 /* Assets.xcassets */; };
 		692164AD202EE1720001E8A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692164AB202EE1720001E8A2 /* LaunchScreen.storyboard */; };
 		692164B8202EE1720001E8A2 /* Cost_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692164B7202EE1720001E8A2 /* Cost_CalculatorTests.swift */; };
 		692164C3202EE1720001E8A2 /* Cost_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692164C2202EE1720001E8A2 /* Cost_CalculatorUITests.swift */; };
+		692164D4202EE6FB0001E8A2 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692164D3202EE6FB0001E8A2 /* CurrencyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		6921649F202EE1720001E8A2 /* Cost Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cost Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		692164A2202EE1720001E8A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		692164A4202EE1720001E8A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		692164A4202EE1720001E8A2 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		692164A7202EE1720001E8A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		692164A9202EE1720001E8A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		692164AC202EE1720001E8A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		692164BE202EE1720001E8A2 /* Cost CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cost CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		692164C2202EE1720001E8A2 /* Cost_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cost_CalculatorUITests.swift; sourceTree = "<group>"; };
 		692164C4202EE1720001E8A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		692164D3202EE6FB0001E8A2 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,10 @@
 		692164A1202EE1720001E8A2 /* Cost Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				692164D2202EE4FD0001E8A2 /* View */,
+				692164D1202EE4F60001E8A2 /* Controller */,
+				692164D0202EE4E90001E8A2 /* Model */,
 				692164A2202EE1720001E8A2 /* AppDelegate.swift */,
-				692164A4202EE1720001E8A2 /* ViewController.swift */,
 				692164A6202EE1720001E8A2 /* Main.storyboard */,
 				692164A9202EE1720001E8A2 /* Assets.xcassets */,
 				692164AB202EE1720001E8A2 /* LaunchScreen.storyboard */,
@@ -123,6 +127,29 @@
 				692164C4202EE1720001E8A2 /* Info.plist */,
 			);
 			path = "Cost CalculatorUITests";
+			sourceTree = "<group>";
+		};
+		692164D0202EE4E90001E8A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		692164D1202EE4F60001E8A2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				692164A4202EE1720001E8A2 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		692164D2202EE4FD0001E8A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				692164D3202EE6FB0001E8A2 /* CurrencyTextField.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				692164A5202EE1720001E8A2 /* ViewController.swift in Sources */,
+				692164A5202EE1720001E8A2 /* MainVC.swift in Sources */,
 				692164A3202EE1720001E8A2 /* AppDelegate.swift in Sources */,
+				692164D4202EE6FB0001E8A2 /* CurrencyTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
