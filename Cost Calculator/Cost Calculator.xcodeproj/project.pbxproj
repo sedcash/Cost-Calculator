@@ -15,6 +15,8 @@
 		692164B8202EE1720001E8A2 /* Cost_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692164B7202EE1720001E8A2 /* Cost_CalculatorTests.swift */; };
 		692164C3202EE1720001E8A2 /* Cost_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692164C2202EE1720001E8A2 /* Cost_CalculatorUITests.swift */; };
 		692164D4202EE6FB0001E8A2 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692164D3202EE6FB0001E8A2 /* CurrencyTextField.swift */; };
+		69C29881202EFDA800F1BAFF /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C29880202EFDA800F1BAFF /* Wage.swift */; };
+		69C29882202EFE8D00F1BAFF /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C29880202EFDA800F1BAFF /* Wage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		692164C2202EE1720001E8A2 /* Cost_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cost_CalculatorUITests.swift; sourceTree = "<group>"; };
 		692164C4202EE1720001E8A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		692164D3202EE6FB0001E8A2 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
+		69C29880202EFDA800F1BAFF /* Wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,7 @@
 		692164D0202EE4E90001E8A2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				69C29880202EFDA800F1BAFF /* Wage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -287,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				692164A5202EE1720001E8A2 /* MainVC.swift in Sources */,
+				69C29881202EFDA800F1BAFF /* Wage.swift in Sources */,
 				692164A3202EE1720001E8A2 /* AppDelegate.swift in Sources */,
 				692164D4202EE6FB0001E8A2 /* CurrencyTextField.swift in Sources */,
 			);
@@ -297,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				692164B8202EE1720001E8A2 /* Cost_CalculatorTests.swift in Sources */,
+				69C29882202EFE8D00F1BAFF /* Wage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
